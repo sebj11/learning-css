@@ -1,0 +1,52 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lemonchiffon;
+}
+
+header {
+    background-color: olivedrab;
+}
+
+.center {
+    text-align: center;
+}
+
+#rarely-use {
+    font-weight: bolder;
+    text-decoration: underline;
+    color: red;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: purple;
+}
+
+a:visited {
+    color: purple;
+}
+
+.small-italic {
+    font-size: small;
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+ol, li {
+    color: darkred !important
+}
+
+ul, li {
+    color: black;
+}

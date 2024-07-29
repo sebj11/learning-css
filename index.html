@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Learning CSS</title>
+</head>
+<body>
+    <header>
+        <nav><a href="./pages/tips-and-tricks.html">Tips & Tricks</a></nav>
+        <nav><a href="https://www.google.com/">Link 2</a></nav>
+        <nav><a href="https://www.google.com/">Link 3</a></nav>
+    </header>
+    <main>
+
+        <h1>CSS Learning Project</h1>
+
+        <div class="center">
+            <img src="./img/seb-tor-lockdown-summer.JPG" width="500" alt="seb and tor lockdown drinks garden picture">
+        </div>
+
+        <h2>Why Have I Created this Page?</h2>
+            <p>
+                I'm using this page to test out all the different CSS methods and document them so I have a log of some sorts. The techniiques that are most useful I will apply to my PT website.
+            </p>
+            <p>
+                I will be following this <a href="https://youtu.be/OXGznpKZ_sA?si=RrRBu9slloEEDpJA">11hour tutotorial</a> on YouTube to help me experiment 
+            </p>
+
+        <hr>
+
+        <h3>Rule Specificity Breakdown</h3>
+
+        <!--Tested out inheritance rules using ol and li-->
+
+        <div class="small-italic">Ranking from least specific to most specific:</div>
+        <ol>
+            <li>Universal Selector (*)</li>
+            <li>Type Selector (Element Selector) and Pseudo-elements</li>
+            <li>Class Selector, Attribute Selector, and Pseudo-classes</li>
+            <li>ID Selector</li>
+            <li>Inline Styles</li>
+            <li>!important</li>
+        </ol>
+       
+        <p>Cascading: If two rules are identical, the one at the bottom of the css page will have higher priority because it is the last to be applied.</p>
+       
+        <p>Specificity: Overrides all other declarations, regardless of their specificity.</p>
+
+        <p> Using !important forces the style to be applied, ignoring all other specificity rules. However, !important can be overridden by another !important with higher specificity.</p>
+
+        <div class="bold">Useful Tip!</div>
+        <div>If you open the page on chrome, right-click, and click 'inspect'. It gives you the CSS breakdown and shows you why some rules are beiing overridden, and the numerical value of the CSS. More on CSS numerical breakdown <a href="./pages/css-number-breakdown.html">here.</a></div>
+
+        <div>
+            <p class="small-italic">Example</p>
+            <img src="./img/css-inspect.jpg" alt="css inspect screenshot" width="600">
+        </div>
+
+        <hr>
+
+        <h3>Chapter 1: Intro</h3>
+        <p>Nothing to test here, it was just setting everything up. The below isn't part of chapter 1 but I think having a breakdown of the specificity rules is super important</p>
+
+
+
+        <h3>Chapter 2: Selectors</h3>
+            <h4>Element Selectors</h4>
+                <p>Elements are like body, p, h1, etc and it automatically selects all those elements. An interesting one is size in px because even with headers it still increases everything proportionately.</p>
+            <h4>Class Selectors</h4>
+                <p>These allow you to get more specific. In CSS you create a class with .[text] {style}, then you can apply to the part of the website you want. So in this example I have applied to the h1 and img within the div.</p>
+            <h4>ID Selectors</h4>
+                <p>This is written in the same way in the stylesheet although with a #. <span id="rarely-use">These should rarely if ever be used!!</span> He has stressed it is bad practice to use these and if you do they should only be used once. I get the sense at this stage that you basically want to style everything with class selectors with the occasional element selector.</p>
+
+            <h5>Grouping Selectors</h5>
+                <p>this is really simple, if you to apply the same style to more than one element selector you simply write a , between the two elements that you wish to apply both to. H1 and H2 are used in this example.</p>
+
+            <h5>Selectors within Selectors (I think)</h5>
+                <p>Similar to the above, if you remove the comma this time it will only target the element nested within the other element. Ok so the indent doesn't make it nested, one tag actually has to be in the other. In this example I have used this for nav plus the link.</p>
+
+            <h5>Universal selector</h5>
+                <p>* Star selector that selects everything, you would never use this apart from a 'CSS reset' which he will go through later.</p>
+
+        <h3>Chapter 3: Colors</h3>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
