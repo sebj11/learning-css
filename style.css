@@ -44,9 +44,30 @@ a:visited {
 }
 
 ol, li {
-    color: darkred !important
+    color: darkred
 }
 
 ul, li {
     color: black;
+}
+
+.color-name {
+    color: blueviolet;
+}
+
+.color-rgb {
+    color: rgba(171, 18, 36, 0.7);
+}
+
+.color-hex {
+    color: #006400;
+}
+
+.color-hsl {
+    color: hsl(190, 71%, 23%);
+}
+
+.color-contrast {
+    background-color: #415a77;
+    color: #ffd60a;
 }
