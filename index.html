@@ -97,6 +97,32 @@
                 <p>Make sure you go on <a href="https://coolors.co/f2ccc3-e78f8e-ffe6e8-acd8aa-f48498">Coolors</a> to generate colour palettes and test contrasts which is really important. For some sort of website standards that assign a numerical value that tells you the contrast between the background and the text and they have minimum scores and tests for this.</p>
         </div>
 
+        <h3>Chapter 4: Units & Sizes</h3>
+
+        <p>All browsers have default settings, so if you got into Chrome setting you can choose a font size of large, medium, small. This is known as your root settings, and is usually always at 16px. This is known as your root element, and is important for percentages later as percentages will be relative to this number.</p>
+
+        <p class="pixel-22">px = pixels, and it the most common size unit. So whilst you can type font size = large, these are essentially pre-set sizes. If you want more customization then pixels is a good choice.</p>
+            
+        <p class="pixel-22 color-rgb">It is not recommended to apply a pixel font size for the entire doc (such as * or html selector) because this then overrides the root settings in your chrome browser which is apparently bad</p>
+
+        <h5 class="dashed-border">Percentages</h5>
+
+        <p>The default setting for elements from a width perspective is to use the entirety of the width that's availabe on the page. So a heading element will take up the entire left-right of the page even if the text only takes up a certain amount. See header border for example.</p>
+
+        <p class="fifty-percent">You can use percetage to reduce this width from the default setting. For example, this paragraph is 50%</p>
+
+        <article class="fifty-percent">
+            <section class="fifty-percent">If you have a parent, like an article, where the width is set to 50%, and you create a child element, like a section, and set that to 50%, then rule will apply 50% of the 50% (25% of the root)</section>
+        </article>
+
+        <div class="two-rem">
+            <h5 class="half-em">rem and em</h5>
+                <p class="half-em">This is supposedly the best way to apply font sizes. From what I understand, rem = relative to root element. So 1rem would keep the text the same size as the default which is 16px. If you put 2rem then it will double the text size to 32pixels.</p>
+
+                <h5>rem vs em</h5>
+                <p>From what I understand, rem always = relative to root. Whereas em means the parent or the selector. So similar to the percentages where you can do 50% of 50%. Em is bascially when you apply size relative to that element, not the root. This is supposed to be great for padding and buttons.</p>
+        </div>
+
     </main>
     <footer>
 
