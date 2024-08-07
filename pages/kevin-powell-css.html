@@ -14,6 +14,39 @@
         <h2>Kevin Powell - HTML & CSS for Beginners</h2>
 
         <h4>Video 12: The CSS Box Model - Margin, Borders & Padding explained</h4>
+
+        <div class="box">
+            <p>The CSS box model is a way to understand how elements on a webpage are structured and how their size and spacing are calculated. It consists of four parts: **content** (the actual text or images), **padding** (space between the content and the border), **border** (a line around the padding), and **margin** (space outside the border that separates the element from others). By adjusting these parts, you control how much space an element takes up and how it interacts with surrounding elements.</p>
+        </div>
+
+        <h5>Padding</h5>
+
+        <div class="padding">
+            <p>Adds space inside the element, between its content (like text or images) and its border. It makes the area around the content bigger, but the background color or image of the element will cover this space.</p>
+        </div>
+
+        <h5>Margin</h5>
+
+        <div class="margin">
+            <p>Adds space outside the element, between its border and the elements around it. It creates a gap between the element and its neighboring elements, and the space created by margins is empty, without any background color or content.</p>
+        </div>
+
+        <div class="padding margin">
+            <p>So, padding affects the space inside the element’s border, while margin affects the space outside the element’s border.</p>
+        </div>
+
+        <h5>Left, right, top, bottom & shortcuts</h5>
+
+        <div class="custom-pmb">
+            <p>You can apply left, right top bottom to padding, border and margin to be more specific. A short cut is to put the numbers next to eachother instead of writing out border left, border right etc in the css. If you do this it will go clock wise starting from top, if you just do one nuber it will do it all over and if you do two numbers it will do top and bottom for one number and left and right for the second number.</p>
+        </div>
+
+        <h5>Calculating total width (and other) pixels</h5>
+
+        <div>
+            open on chrome and right click page and click 'inspect' to see the breakdown of the code. Here you can work out the total width by adding up the different elements e.g. 50px left and right for padding, 25px left and right for margin and 5px left and right for border = total of width of 2x50, 2x25 and 2x5 = 160px total width for that element. This is important for the box method. Always starts off with box + padding + border + margin in that order to work out total width of element.
+        </div>
+
     </main>
     <footer>
 

@@ -102,3 +102,25 @@ ul, li {
     border-color: brown;
 }
 
+.padding {
+    padding: 100px;
+    background-color: cyan;
+    border-style: solid;
+    border-color: darkblue;
+}
+
+.margin {
+    margin: 100px;
+    background-color: cyan;
+    border-style: solid;
+    border-color: darkblue;
+}
+
+/*pmb = padding, margin, border*/
+.custom-pmb {
+    margin: 20px 40px 60px 80px;
+    padding: 40px 30px 20px 10px;
+    border: solid red 10px;
+    border-left: solid blue 20px;
+    border-bottom: dotted green 5px;
+}
