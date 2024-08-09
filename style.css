@@ -124,3 +124,32 @@ ul, li {
     border-left: solid blue 20px;
     border-bottom: dotted green 5px;
 }
+
+/* open on chrome and right click page and click 'inspect' to see the breakdown of the code. Here you can work out the total width by adding up the different elements e.g. 50px left and right for padding, 25px left and right for margin and 5px left and right for border = total of width of 2x50, 2x25 and 2x5 = 160px total width for that element. This is important for the box method. */
+
+/* testing out background images below - it's the padding that really defines the size of the box or in this case, image*/
+
+.bg-img {
+    background-image: url(img/boxer-dog.jpeg);
+    padding: 100px;
+    padding-top: 150px;
+    margin: 25px;
+    color: white;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+/* the image repeats itself to cover the space, to stop this you can enter the below:
+(example)
+.no-repeat {
+    background-repeat: no-repeat
+    or repeat x (axis only)
+    or repeat y
+} */
+
+/* when the image repeats, background-size: cover is the best option for making it fit the best without repeating. Then you can use background-position to have the focal point of the image to be cenre, top, bottom left etc. Top right is the default. Then use padding like I have wih the boxer image to play around with the positioning.*/
+
+.background {
+    background-image: url(img/moroccan-flower.png);
+}
+
