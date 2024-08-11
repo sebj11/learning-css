@@ -11,11 +11,7 @@
         
     </header>
     <main>
-        <h2 class="bold">Video 14: Styling Text with CSS</h2>
-
-        <div>
-            <a href="https://www.cssfontstack.com/">CSS Font Stack</a>
-        </div>
+        <h2 class="bold center">Video 14 & 15: Styling Text & Links with CSS</h2>
 
         <h3>Spacing between elements</h3>
             <div>
@@ -24,6 +20,37 @@
             <div>
                 <p>Now we're going to talk about spacing in between the lines in one element, like a p. This is the exact equivalent to the line spacing function on word. The css style for this is line-height, you can do this in pixels but it is recommneded to just use the sane number referencing as in word. So 1 would make it exactly the same size as the text which is quite cramped, 2 would be the equivlant of double spacing which is probably too big. So somewhere within that range works well. For this I've opted for 1.25.</p>
             </div>
+
+        <h4>Main Text Stlyes</h4>
+
+        <ul>
+            <li>Font Size: <span class="bigger">Larger</span> or Smaller</span></li>
+            <li>Font Weight: <span class="bolder">Bolder</span>, Lighter or px</li>
+            <li>Font Style: <span class="italics">Italics</span> or Oblique (Extra Itlaics)</li>
+            <li>Text Align: Center (Title), Left, Right, Justify = equal spacing like in word but generally isn't used in web development</li>
+            <li>Text-Transform: Upper case, <span class="capital">capitalized</span></li>
+            <li>Text Decoration: <span class="under-line">Underline</span>, overline</li>
+
+        </ul>
+
+        <h3>Video 15: Pseudo-classes</h3>
+
+            <p>In CSS, <a href="https://www.google.com/">pseudo-classes</a> are special keywords added to selectors that specify a special state of an <a href="https://www.youtube.com/">element</a>. They allow you to style elements based on their state or position without needing additional classes or <a href="https://www.codecademy.com/catalog/language/javascript">JavaScript</a>. I've added placeholder links to random words in this text for the purpose of this exercise.</p>
+
+            <p>In the stylesheet the specificity is very important. It must be in this order: Active, Visited, Hover and lastly Active. If you do active before hover then the active won't be applied because when you are clicking and dragging the link (making it active) you are also hovering over it, but because hover is lower on the stylesheet the hover style will remain prioritized. FYI - active isn't really used that much.</p>
+
+            <h4>Tips</h4>
+                <ul>
+                    <li>It is quite common to remove the default underline with links using text-decoration: none</li>
+                    <li>Make sure you make your links stand out though, hover is recommended like subtly changing the color.</li>
+                    <li>a:focus for when pressing tab to work through different elements. Very similar to hover so they can be paired together in the stylesheet. Good for people with accessability issues e.g. no mouse.</li>
+                </ul>
+
+
+        <h4>Referenced Links</h4>
+            <ul>
+                <li><a href="https://www.cssfontstack.com/">CSS Font Stack</a></li>
+            </ul>
     </main>
 
     <footer>

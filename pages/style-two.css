@@ -4,12 +4,58 @@ body {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-h3 {
+h3, h4 {
     margin-bottom: 0px;
-    text-decoration: underline;
 }
 
 p {
     margin-top: 0;
     line-height: 1.25;
+}
+
+ul {
+    margin-top: 5px
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+/*you can do a:link too to get the same effect but applying the psuedo to default state of your link isn't necessary.*/
+
+a:visited {
+    color: purple;
+}
+
+a:hover, a:focus {
+    font-style: italic;
+}
+
+a:active {
+    font-size: x-small;
+}
+
+.bigger {
+    font-size: larger;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+.capital {
+    text-transform: uppercase;
+}
+
+.under-line {
+    text-decoration: underline;
 }
