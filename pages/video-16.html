@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-two.css">
-    <title>Part 16: CSS selectors and Specificity</title>
+    <title>Part 16 & 17: CSS Selectors, Specificity & Styling Lists</title>
 </head>
 <body>
 <header>
 
 </header>    
 <main>
-    <h2>Part 16: CSS selectors and Specificity</h2>
+    <h2>Part 16 & 17: CSS Selectors, Specificity & Styling Lists</h2>
 
     <div class="specificity">
         <h3>Specificity</h3>
             <p>CSS specificity determines which CSS rules are applied to an element when multiple rules could apply. Think of it like a priority system for CSS styles. The more specific a CSS rule is, the higher its priority.</p>
     </div>
 
-    <div>
+
+    <div class="ordered-lists">
         <ol>
             <li>Inline Styles: These are the most specific. If you use inline styles directly in HTML, they override any CSS rules in your stylesheets.</li>
             <li>ID Selectors: These are very specific. An ID selector targets a single element with a unique ID (like #header). It has high priority but can only be used once per page.</li>
@@ -31,13 +32,14 @@
         <p>In short, CSS specificity helps the browser decide which styles to apply when there are conflicting rules. The more specific the rule, the higher its priority.</p>
     </div>
 
-    <h3>Compound Selector</h3>
-
-    <div>
-        <p>When you combine a class selector with an element selector in CSS, it is referred to as a "compound selector" or "descendant selector". For example - '.example p {}'.</p>
+    <div class="compound-selector">
+        <h3>Compound Selector</h3>
+            <p>When you combine a class selector with an element selector in <a href="https://specificity.keegan.st/">CSS</a>, it is referred to as a "compound selector" or "descendant selector". For example - '.example p {}'.</p>
     </div>
 
-    <div>
+    <!--showing different examples of styling different elements within a div using a compound selectors-->
+
+    <div class="unordered-lists ordered-lists">
         <ol>
             <li>Precise Targeting</li>
                 <ul>
@@ -68,11 +70,42 @@
         </ol>
     </div>
 
+    <div class="important">
+        <h3>!important</h3>
+            <p>If you have conflicting styles then you can use !important after the style. E.g color: #3dbef5 !important; BUT, this should rarely be used as it can get messy with a bunch of conflicting important tags</p>
+    </div>
+
+    <h4>Bullet Aligns</h4>
+
+    <p>When you center align a list, dependent on the browser it migth keep the bullets or numbers to the left which looks weird like the below</p>
+
+    <div class="center-list">
+        <ul>
+            <li>List Number 1</li>
+            <li>List Number 2</li>
+            <li>List Number 3</li>
+            <li>List Number 4</li>
+        </ul>
+    </div>
+
+    <p>By applying 'list-style-position' you can change this to 'inside' so it looks better like below:</p>
+
+    <div class="center-list">
+        <ol>
+            <li>List Number 1</li>
+            <li>List Number 2</li>
+            <li>List Number 3</li>
+            <li>List Number 4</li>
+        </ol>
+    </div>
+
     <h4>Links & Tips</h4>
     <ul>
         <li><a href="https://youtu.be/Oh0TplG4nYw?si=xl5JAnBexKt-5LuC">HTML & CSS for Beginners Part 16: CSS selectors and Specificity</a></li>
         <li>Google 'color picker' and you can select straight from the page</li>
+        <a href="https://specificity.keegan.st/">CSS Calculator</a>
     </ul>
+
 </main>
 <footer>
 

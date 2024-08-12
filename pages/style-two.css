@@ -104,3 +104,39 @@ a:active {
 .important {
     background-color: red !important;
 }
+
+/*Styling Lists*/
+
+
+
+.ordered-lists ol li {
+    list-style-type: lower-latin;
+    background-color:rgb(10, 117, 49);
+    padding: 15px;
+    margin: 15px;
+}
+
+.unordered-lists ul li {
+    list-style-type: square;
+    background-color: #eb7507;
+    margin-bottom: 10px;
+}
+
+.unordered-lists.ordered-lists ol li {
+    padding: 5px;
+}
+
+.unordered-lists.ordered-lists ol ul li {
+    padding: 20px;
+}
+
+/*playing around with targetting different elements using combinator selectors - this is when you only apply styles to elements that have both tags like above. Then finding the right descendent to apply specific styles to different elements.*/
+
+.center-list ul li {
+    text-align: center;
+}
+
+.center-list ol li {
+    text-align: center;
+    list-style-position: inside;
+}
