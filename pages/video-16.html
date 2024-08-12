@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-two.css">
+    <title>Part 16: CSS selectors and Specificity</title>
+</head>
+<body>
+<header>
+
+</header>    
+<main>
+    <h2>Part 16: CSS selectors and Specificity</h2>
+
+    <div class="specificity">
+        <h3>Specificity</h3>
+            <p>CSS specificity determines which CSS rules are applied to an element when multiple rules could apply. Think of it like a priority system for CSS styles. The more specific a CSS rule is, the higher its priority.</p>
+    </div>
+
+    <div>
+        <ol>
+            <li>Inline Styles: These are the most specific. If you use inline styles directly in HTML, they override any CSS rules in your stylesheets.</li>
+            <li>ID Selectors: These are very specific. An ID selector targets a single element with a unique ID (like #header). It has high priority but can only be used once per page.</li>
+            <li>Class, Attribute, and Pseudo-class Selectors: These have lower specificity than ID selectors. Class selectors (like .button), attribute selectors (like [type="text"]), and pseudo-classes (like :hover) fall into this category.</li>
+            <li>Element and Pseudo-element Selectors: These are the least specific. They target elements directly (like p for paragraphs) or pseudo-elements (like ::before).</li>
+        </ol>
+    </div>
+
+    <div>
+        <p>In short, CSS specificity helps the browser decide which styles to apply when there are conflicting rules. The more specific the rule, the higher its priority.</p>
+    </div>
+
+    <h3>Compound Selector</h3>
+
+    <div>
+        <p>When you combine a class selector with an element selector in CSS, it is referred to as a "compound selector" or "descendant selector". For example - '.example p {}'.</p>
+    </div>
+
+    <div>
+        <ol>
+            <li>Precise Targeting</li>
+                <ul>
+                    <li>Benefit: Compound selectors allow you to style specific elements within a certain context, avoiding unintended changes to similar elements elsewhere.</li>
+                    <li>Example: .example p targets only paragraphs inside elements with the class .example, leaving other paragraphs unaffected.</li>
+                </ul>
+                <li>Avoiding Overuse of Classes</li>
+                <ul>
+                    <li>Benefit: Instead of adding extra classes to elements for styling, you can use compound selectors to apply styles based on the element's context.</li>
+                    <li>Example: .sidebar h2 styles only h2 headings inside .sidebar, so you don’t need to add a specific class to every h2 inside the sidebar.</li>
+                </ul>
+                <li>Maintaining Clean HTML</li>
+                    <ul>
+                        <li>Benefit: Helps keep your HTML cleaner by reducing the number of classes needed. You style elements based on their relationship to other elements rather than adding many additional classes.</li>
+                        <li>Example: Instead of adding a unique class to each paragraph, you use .article p to style paragraphs within .article.</li>
+                    </ul>
+                <li>Improved Readability</li>
+                    <ul>
+                        <li>Benefit: Makes your CSS more readable and maintainable by clearly defining which elements are being styled in a specific context.</li>
+                        <li>Example: .header a makes it clear that you're styling links within the header section.</li>
+                    </ul>
+                <li>Enhanced Control</li>
+                    <ul>
+                        <li>Benefit: Provides more control over which elements get styled, which can be particularly useful in complex layouts or when dealing with multiple sections of a page.</li>
+                        <li>Example: .content .highlighted targets elements with the class .highlighted inside .content, allowing for targeted styling in specific areas.
+                        </li>
+                    </ul>
+        </ol>
+    </div>
+
+    <h4>Links & Tips</h4>
+    <ul>
+        <li><a href="https://youtu.be/Oh0TplG4nYw?si=xl5JAnBexKt-5LuC">HTML & CSS for Beginners Part 16: CSS selectors and Specificity</a></li>
+        <li>Google 'color picker' and you can select straight from the page</li>
+    </ul>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>

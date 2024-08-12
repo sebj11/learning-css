@@ -59,3 +59,48 @@ a:active {
 .under-line {
     text-decoration: underline;
 }
+
+/*effectively the below compound selectors allows you to style different elements within your div using one css tag. So in he html I only need to apply the 'specificity' class or the 'compound-selector' class to the div to apply a range of different styles. It also prevents me from repeating the same styles on this stylesheet*/
+
+.specificity {
+    color: #eb7507;
+}
+
+.specificity p {
+    color: #89f5df;
+    text-decoration: none;
+}
+
+.specificity h3 {
+    text-decoration: underline;
+}
+
+.compound-selector {
+    background-color: #f189f5;
+    color: #091f82;
+}
+
+.compound-selector p {
+    font-style: italic;
+    padding: 20px;
+}
+
+
+.compound-selector h3 {
+    text-transform: uppercase;
+}
+
+.compound-selector a {
+    color: #4ff005;
+}
+
+.compound-selector a:hover {
+    text-decoration: underline;
+    color: #3dbef5;
+}
+
+/* If you have conflicting styles then you can use !important after the style. E.g color: #3dbef5 !important; BUT, this should rarely be used as it can get messy with a bunch of conflicting important tags.*/ 
+
+.important {
+    background-color: red !important;
+}
