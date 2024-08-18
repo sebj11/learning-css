@@ -1,0 +1,13 @@
+body {
+    font-family: monaco, Consolas, Lucida Console, monospace;
+    background-image: url(../img/papyrus.webp);
+    min-height: 100vh;
+}
+
+/*min-height 100vh is good to set because the body will take up the space of the content, so if you don't have that much content in your body/main you don't want the footer to show at the top, you still want to scroll down. Setting a min-height of 100 vh keeps this from happening.*/
+
+.header-nav {
+    display: flex;
+    gap: 1em;
+}
+
