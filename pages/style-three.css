@@ -6,8 +6,44 @@ body {
 
 /*min-height 100vh is good to set because the body will take up the space of the content, so if you don't have that much content in your body/main you don't want the footer to show at the top, you still want to scroll down. Setting a min-height of 100 vh keeps this from happening.*/
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* the above is CSS reset, this is a useful tool when you lose control of the ems and rems and this is a good way to bring it back to neutral.*/
+
+/*box-sizing calculates content box, border and padding so you can set it all to specific sizes*/
+
 .header-nav {
     display: flex;
     gap: 1em;
+}
+
+.center {
+    text-align: center;
+    padding: 1rem;
+    margin: 1.5rem;
+    border: solid red;
+}
+
+.intro-para {
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    border: solid blue;
+}
+
+.h3 {
+    border: solid green;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.css-reset {
+    margin: 1.5rem;
+    padding: 1rem;
+    border: solid pink;
 }
 
