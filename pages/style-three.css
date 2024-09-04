@@ -56,7 +56,6 @@ body {
 }
 /* below shows the inherit function to make sure the text in the form is consistent with the text outside it*/
 
-/*
 .chapter-six {
     font-size: 2rem;
 }
@@ -64,6 +63,17 @@ body {
 input, button {
     font-size: inherit;
 }
-*/
+
+a {
+    text-decoration: none;
+    color: hsl(240, 100%, 50%);
+}
+
+a:hover {
+    /* color:  hsl(211, 100%, 50%); */
+    opacity: 0.8;
+}
+
+/* look at similar hsl numbers OR use opacity to make it slighlly lighter. Don't use both. */
 
 
