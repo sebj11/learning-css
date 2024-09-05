@@ -76,4 +76,36 @@ a:hover {
 
 /* look at similar hsl numbers OR use opacity to make it slighlly lighter. Don't use both. */
 
+ol {
+    list-style-type: lower-latin;
+}
 
+ul {
+    list-style-type: square;
+    color: red;
+    line-height: 1.5rem;
+}
+
+ol, ul {
+    margin-top: 0px;
+}
+
+h4 {
+    margin-bottom: 0px;
+}
+
+/*messed around with inspect code to reduce margin to get the list items closer to h4 titles*/
+
+ol li {
+    color: purple;
+}
+
+/* ol li: nth-child(odd) {
+    color: purple;
+} */
+
+ul ::marker {
+    color: darkgreen;
+    font-size: 1.5rem;
+    /* content: ">>>"; */
+}
