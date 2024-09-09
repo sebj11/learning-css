@@ -4,8 +4,18 @@ body {
     background-color: lemonchiffon;
 }
 
+ul {
+    padding: 0rem;
+}
+
 header {
     background-color: olivedrab;
+    text-align: right;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0.5rem 0.5rem 0.5rem 2rem
 }
 
 .center {
@@ -153,3 +163,6 @@ ul, li {
     background-image: url(img/moroccan-flower.png);
 }
 
+.ch-width {
+    width: 40ch;
+}
