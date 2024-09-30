@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+/* img will have a tiny bit of space underneath them (like padding) as they are in-line level elements and make space for the bottom of letters e.g. the bottom curl of a 'y' or bottom of 'p'. In order to remove this apply the above to all imgs*/
+
+body {
+    font-family: Poppins;
+    min-height: 100vh;
+}
+
+.example {
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 1px solid red;
+}
+
+.example img {
+    width: 25%;
+    height: auto;
+}
+
+.profile-pic {
+    width: 35%;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    border: 5px double gray;
+    border-radius: 50px;
+}
+
+/* The above is all about the img being responsive to the web page which is very important to learn in CSS. Without the above, the img stays the same regardless of the size of the window. By applying the width to 25% this ensures the width stays 25% of the container - which will vary when you resize the window. By setting the height to auto it makes sure that it stays the same proportions as width - therefore making it responsive */
+
